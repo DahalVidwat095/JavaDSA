@@ -1,7 +1,8 @@
+package patterns;
 
 import java.util.Scanner;
 
-public class Practice {
+public class Palindrome {
     public static void main (String args[]){
         Scanner cs = new Scanner(System.in);
         System.out.print("Enter number of rows: ");

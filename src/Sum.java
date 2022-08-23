@@ -1,6 +1,4 @@
-import java.sql.SQLOutput;
-
-public class Variables {
+public class Sum {
     public static void main (String [] args) {
         // variables
         int a = 10;

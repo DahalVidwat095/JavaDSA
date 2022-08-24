@@ -12,7 +12,7 @@ public class HollowDiamond {
                 System.out.print(" ");
             }
             for (int j = 1; j <= i; j++) {
-                if(j==1 || j==i){
+                if(j==1 || j==i || i==n){
                     System.out.print("* ");
                 }else{
                     System.out.print("  ");

@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class SumOfTwo {
     public static int sumOfTwo(int a, int b){
-        int c = a+b;
-        System.out.print("The sum is " + c);
-        return c;
+        int sum = a+b;
+        return sum;
     }
     public static void main(String args[]){
         Scanner cs =new Scanner(System.in);
@@ -14,6 +13,7 @@ public class SumOfTwo {
         int a = cs.nextInt();
         System.out.print("Enter Your Second number: ");
         int b = cs.nextInt();
-        sumOfTwo(a,b);
+        int sum = sumOfTwo(a,b);
+        System.out.print("The sum is " + sum + ".");
     }
 }

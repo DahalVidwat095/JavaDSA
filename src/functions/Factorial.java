@@ -4,7 +4,12 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void printFactorial(int n) {
+        if(n<0){
+            System.out.print("Invalid number.");
+            return;
+        }
         int factorial = 1;
+
         for (int i = n; i >= 1; i--) {
             factorial = factorial * i;
         }

@@ -1,17 +1,13 @@
 import java.util.Scanner;
-
 public class Exercise5 {
-
     public static void main(String[] args) {
-
-        Scanner input = new Scanner(System.in);
-        System.out.print("Input the number of sides on the polygon: ");
-        int ns = input.nextInt();
-        System.out.print("Input the length of one of the sides: ");
-        double side = input.nextDouble();
-        System.out.print("The area is: " + polygonArea(ns, side)+"\n");
-    }
-    public static double polygonArea(int ns, double side) {
-        return (ns * (side * side)) / (4.0 * Math.tan((Math.PI / ns)));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input a string: ");
+        char[] letters = scanner.nextLine().toCharArray();
+        System.out.print("Reverse string: ");
+        for (int i = letters.length - 1; i >= 0; i--) {
+            System.out.print(letters[i]);
+        }
+        System.out.print("\n");
     }
 }

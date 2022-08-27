@@ -1,26 +1,45 @@
 import java.util.Scanner;
+
 public class Exercise5 {
+    public static int hex_to_decimal(String s)
+    {
+        String digits = "0123456789ABCDEF";
+        s = s.toUpperCase();
+        int val = 0;
+        for (int i = 0; i < s.length(); i++)
+        {
+            char c = s.charAt(i);
+            int d = digits.indexOf(c);
+            val = 16*val + d;
+        }
+        return val;
+    }
     public static void main(String args[])
     {
-        int dec_num, rem, quot, i=1, j;
-        int oct_num[] = new int[100];
-        Scanner scan = new Scanner(System.in);
+        String hexdec_num;
+        int dec_num, i=1, j;
+        int octal_num[] = new int[100];
+        Scanner in = new Scanner(System.in);
 
-        System.out.print("Input a Decimal Number: ");
-        dec_num = scan.nextInt();
+        System.out.print("Input a hexadecimal number: ");
+        hexdec_num = in.nextLine();
 
-        quot = dec_num;
+        // Convert hexadecimal to decimal
 
-        while(quot != 0)
+        dec_num = hex_to_decimal(hexdec_num);
+
+        //Convert decimal to octal
+
+        while(dec_num != 0)
         {
-            oct_num[i++] = quot%8;
-            quot = quot/8;
+            octal_num[i++] = dec_num%8;
+            dec_num = dec_num/8;
         }
 
-        System.out.print("Octal number is: ");
+        System.out.print("Equivalent of octal number is: ");
         for(j=i-1; j>0; j--)
         {
-            System.out.print(oct_num[j]);
+            System.out.print(octal_num[j]);
         }
         System.out.print("\n");
     }

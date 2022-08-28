@@ -1,4 +1,4 @@
-package patterns;
+package Patterns;
 
 public class Xmas {
     public static void main(String args[]) {

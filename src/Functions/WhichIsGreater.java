@@ -3,6 +3,7 @@ package Functions;
 import java.util.Scanner;
 
 public class WhichIsGreater {
+    //Write a function which takes in 2 numbers and returns the greater of those two.
     public static void findGreaterOne(int a, int b){
         if(a>b){
             System.out.print(a+ " is Greater than " +b+ ".");

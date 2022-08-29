@@ -1,3 +1,6 @@
 package Functions;
 
-public class InfiniteDoWhileLoop
+public class InfiniteDoWhileLoop{
+
+    hello
+}

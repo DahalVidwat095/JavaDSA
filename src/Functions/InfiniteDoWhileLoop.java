@@ -2,15 +2,34 @@ package Functions;
 
 import java.util.Scanner;
 
-public class InfiniteDoWhileLoop{
-/Make a function to check if a given number n is even or not.
-    public static boolean isEven(int number){
-        if(number%2==0){
-            return true;
+public class InfiniteDoWhileLoop {
+    public static void printFactorial(int n) {
+        if(n<0){
+            System.out.print("Invalid number.");
+            return;
         }
-        return false;
+        int factorial = 1;
+
+        for (int i = n; i >= 1; i--) {
+            factorial = factorial * i;
+        }
+        System.out.println("The factorial of " + n + " is " +  factorial +".");
     }
     public static void main(String args[]){
-
-
+        Scanner cs = new Scanner(System.in);
+        System.out.print("Enter value of n: ");
+        int n = cs.nextInt();
+        printFactorial(n);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -11,6 +11,9 @@ public class InfiniteDoWhileLoop{
         return false;
     }
     public static void main(String args[]){
-
-
+        Scanner cs = new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int number = cs.nextInt();
+        if(isEven(number)){
+            System.out.print
 }

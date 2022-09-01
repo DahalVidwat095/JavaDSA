@@ -2,14 +2,12 @@ package Functions;
 
 
 public class InfiniteDoWhile {
-    public static void infiniteDoWhile(int number){
+    public static void infiniteDoWhile(){
         do{
             System.out.print("*");
-        }while(number<2);{
-        }
+        }while(true);
     }
     public static void main(String args []){
-        int number=1;
-        infiniteDoWhile(number);
+        infiniteDoWhile();
     }
 }

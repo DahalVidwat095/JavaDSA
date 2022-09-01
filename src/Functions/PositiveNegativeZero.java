@@ -24,11 +24,10 @@ public class PositiveNegativeZero {
             }
             System.out.print("Do you want to continue?(y/n): ");
             choice = cs.next().charAt(0);
-        }while(choice=='y' || choice=='Y');{
+        }while(choice=='y' || choice=='Y');
             System.out.println("Positive: "+positive);
             System.out.println("Negative: "+negative);
             System.out.println("Zero: "+zero);
-        }
     }
 }
 

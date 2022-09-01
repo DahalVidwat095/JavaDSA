@@ -1,6 +1,5 @@
 package Functions;
 
-
 public class InfiniteDoWhile {
     public static void infiniteDoWhile(){
         do{

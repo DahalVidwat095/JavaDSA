@@ -10,7 +10,6 @@ public class TwoDArray {
         int[][] numbers = new int[rows][cols];
         for(int i=0; i<rows; i++){
             for(int j=0; j<cols; j++){
-                System.out.print("Enter value for "+ i +" row "+ j +" column: " );
                 numbers[i][j] = cs.nextInt();
             }
         }

@@ -23,10 +23,9 @@ public class IndexOfTwoDArray {
             for (int j = 0; j < cols; j++) {
                 if (numbers[i][j] == num) {
                     System.out.print("The number is found at (" + i + "," + j + ") position."  );
-                }else{
-                    continue;
+                }
                 }
             }
         }
     }
-}
+
